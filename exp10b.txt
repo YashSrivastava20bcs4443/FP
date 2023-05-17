@@ -1,0 +1,12 @@
+val text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel risus a libero fringilla efficitur. Integer eget blandit eros. Sed eu tristique lorem. Sed ullamcorper elit vitae nunc convallis, id condimentum neque consectetur."
+
+val wordCountMap = text
+  .toLowerCase()                              // Convert the text to lowercase
+  .split("\\W+")                             // Split the text into words using non-word characters as delimiters
+  .groupBy(identity)                         // Group the words by their identity (i.e., the word itself)
+  .mapValues(_.length)                       // Count the occurrences of each word
+
+// Print the word count
+wordCountMap.foreach { case (word, count) =>
+  println(s"$word: $count")
+}
