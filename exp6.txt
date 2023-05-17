@@ -1,0 +1,17 @@
+val str1 = "Hello"
+val str2 = "world!"
+val result = str1 + " " + str2
+println(result) // Output: Hello world!
+
+
+val name = "John"
+val age = 30
+val message = s"My name is $name and I'm $age years old."
+println(message) // Output: My name is John and I'm 30 years old.
+
+
+val name = "Yash Srivastava"
+val uid = "20bcs4443"
+
+val message = s"Name: $name\nUID: $uid"
+println(message)

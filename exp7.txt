@@ -1,0 +1,21 @@
+val number = 10
+
+if (number > 0) {
+  println("Number is positive")
+} else if (number < 0) {
+  println("Number is negative")
+} else {
+  println("Number is zero")
+}
+
+
+val day = "Monday"
+
+val result = day match {
+  case "Monday" => "Start of the week"
+  case "Tuesday" | "Wednesday" | "Thursday" => "Midweek"
+  case "Friday" => "End of the week"
+  case _ => "Weekend"
+}
+
+println(result)

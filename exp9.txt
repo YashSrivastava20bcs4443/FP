@@ -1,0 +1,43 @@
+// Array declaration and initialization
+val numbers: Array[Int] = Array(1, 2, 3, 4, 5)
+
+// Accessing array elements
+val firstElement = numbers(0)
+val thirdElement = numbers(2)
+println(s"First element: $firstElement") // Output: First element: 1
+println(s"Third element: $thirdElement") // Output: Third element: 3
+
+// Updating array elements
+numbers(2) = 10
+println(s"Updated array: ${numbers.mkString(", ")}") // Output: Updated array: 1, 2, 10, 4, 5
+
+// Array length
+val length = numbers.length
+println(s"Array length: $length") // Output: Array length: 5
+
+// Iterating over an array using a for loop
+for (num <- numbers) {
+  println(num)
+}
+// Output:
+// 1
+// 2
+// 10
+// 4
+// 5
+
+// Array methods
+val squaredNumbers = numbers.map(num => num * num)
+println(s"Squared numbers: ${squaredNumbers.mkString(", ")}") // Output: Squared numbers: 1, 4, 100, 16, 25
+
+val evenNumbers = numbers.filter(num => num % 2 == 0)
+println(s"Even numbers: ${evenNumbers.mkString(", ")}") // Output: Even numbers: 2, 10, 4
+
+val sum = numbers.reduce((acc, num) => acc + num)
+println(s"Sum of numbers: $sum") // Output: Sum of numbers: 22
+
+val sortedArray = numbers.sorted
+println(s"Sorted array: ${sortedArray.mkString(", ")}") // Output: Sorted array: 1, 2, 4, 5, 10
+
+val reversedArray = numbers.reverse
+println(s"Reversed array: ${reversedArray.mkString(", ")}") // Output: Reversed array: 5, 4, 10, 2, 1

@@ -1,0 +1,32 @@
+// while loop
+var i = 0
+while (i < 5) {
+  println(i)
+  i += 1
+}
+
+// do-while loop
+var j = 0
+do {
+  println(j)
+  j += 1
+} while (j < 5)
+
+// for loop
+val fruits = Array("apple", "banana", "orange")
+for (fruit <- fruits) {
+  println(fruit)
+}
+
+// for loop with a range
+for (i <- 0 until 5) {
+  println(i)
+}
+
+// for loop with multiple generators
+for {
+  i <- 0 until 3
+  j <- 0 until 2
+} {
+  println(s"($i, $j)")
+}

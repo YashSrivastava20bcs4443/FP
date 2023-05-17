@@ -1,0 +1,15 @@
+// Function declaration
+def greet(name: String): Unit = {
+  println(s"Hello, $name!")
+}
+
+def addNumbers(a: Int, b: Int): Int = {
+  val sum = a + b
+  return sum
+}
+
+// Function invocation
+greet("Alice") // Output: Hello, Alice!
+
+val result = addNumbers(3, 5)
+println(s"Sum: $result") // Output: Sum: 8
